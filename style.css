@@ -1,0 +1,287 @@
+html, body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+html, body, p, label, input, h1, h2, h3, button{
+  font-family: "Outfit", sans-serif;
+}
+button{
+  border: none;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+#divBasicCRA{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.div1CRA{
+  display: flex;
+  width: 100%; height: 100%;
+  flex-direction: row;
+  gap: 10px;
+}
+.div2CRA{
+  display: flex;
+  width: 100%; height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.div2CRA label{
+  font-size: 2vw;
+  margin: 2vw;
+  margin-bottom: 0;
+  font-weight: 800;
+  @media (orientation: portrait) {
+    font-size: 2.3vh;
+  }
+}
+.div2CRA h3{
+  font-size: 1vw;
+  margin: 1vw;
+  font-weight: 500;
+  @media (orientation: portrait) {
+    font-size: 1.8vh;
+  }
+}
+.div2CRA button{
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  padding: 0 3vw;
+  font-weight: 500;
+  color: white;
+  background-color: #465545;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+  border-radius: 1.5vw;
+  @media (orientation: portrait) {
+    font-size: 2vh;
+  }
+}
+.div2CRA button:active{
+  box-shadow: none;
+  color: white;
+  background-color: #404040;
+}
+.div3CRA{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%; height: 100%;
+  justify-content: space-between;
+  gap: 15px;
+}
+.div3CRA button{
+  flex: 1;
+  margin-bottom: 0;
+  padding: 1vw;
+  font-size: 2vw;
+  font-weight: 800;
+  color: black;
+  box-shadow: none;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+  background-color: rgb(228, 228, 228);
+  @media (orientation: portrait) {
+    font-size: 2.3vh;
+  }
+}
+.div3CRA button:active{
+  background-color: #465545;
+  color: white;
+}
+.div3CRA span{
+  font-size: 1vw;
+  @media (orientation: portrait) {
+    font-size: 1.3vh;
+  }
+}
+.div4CRA{
+  display: flex;
+  width: 100%; height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.div4CRA label{
+  font-size: 6vw;
+  margin: 2vw;
+  margin-bottom: 0;
+  font-weight: 800;
+  @media (orientation: portrait) {
+    font-size: 6vh;
+  }
+}
+.div4CRA button{
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  padding: 0 3vw;
+  font-weight: 500;
+  color: white;
+  background-color: #465545;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+  border-radius: 1.5vw;
+  @media (orientation: portrait) {
+    font-size: 2.4vh;
+  }
+}
+.div4CRA button:active{
+  box-shadow: none;
+  color: white;
+  background-color: #404040;
+}
+.div5CRA{
+  display: flex;
+  width: 100%; height: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.div5CRA div{
+  width: 100%;
+}
+.div5CRA div label{
+  font-size: 1.5vw;
+  @media (orientation: portrait) {
+    font-size: 3vh;
+  }
+}
+.div5CRA div table{
+  border: none;
+}
+.div5CRA div td{
+  margin-left: 10px;
+}
+.div5CRA label{
+  font-size: 2vw;
+  margin: 2vw;
+  margin-bottom: 4vw;
+  font-weight: 800;
+  @media (orientation: portrait) {
+    font-size: 6vh;
+    margin-bottom: 4vh;
+  }
+}
+.div5CRA button{
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  padding: 0 3vw;
+  font-weight: 500;
+  color: white;
+  background-color: #465545;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+  border-radius: 1.5vw;
+  @media (orientation: portrait) {
+    font-size: 2.4vh;
+  }
+}
+.div5CRA button:active{
+  box-shadow: none;
+  color: white;
+  background-color: #404040;
+}
+
+#headerCRA {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 5%;
+  flex: 3;
+}
+#headerCRA label{
+  font-size: 10vw;
+}
+#headerCRA p {
+  font-size: 2vw;
+  font-style: italic;
+}
+
+#ageCRA {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+}
+#ageCRA label{
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+#ageCRA input{
+  font-size: 10vw;
+  width: 20vw;
+  border-radius: 2vw;
+  font-weight: 800;
+  background-color: #465545;
+  border: none;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+  color: white;
+  padding-left: 1vw;
+  text-align: center;
+}
+#ageCRA button{
+  width: 15vw;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  font-weight: 900;
+  color: #465545;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+}
+#ageCRA button:active{
+  box-shadow: none;
+}
+
+#loadingBarDivCRA {
+  display: none;
+
+}
+#loadingBarCRA {
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  color: white;
+  font-weight: 800;
+  font-size: 3.5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#divCRAAll {
+  flex: 10;
+  display: none;
+}
+.nextButtons{
+  background-color: #FE615A;
+  box-shadow: 4px 4px 8px 1px rgba(0,0,0,0.6);
+}
+.nextButtons:active{
+  background-color: #465545;
+  color: white;
+}
+
+@keyframes jiggle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+}
+.jiggle {
+  animation: jiggle 0.4s ease;
+}
