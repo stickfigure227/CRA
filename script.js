@@ -433,6 +433,7 @@ function managementCRA(input) {
           </tbody>
         </table>
       </div>
+      <button onclick="window.location.reload()"><p>Key in again</p></button>
     </div>
   `;
   divCRAAll.textContent = '';
