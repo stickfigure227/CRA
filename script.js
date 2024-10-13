@@ -257,125 +257,64 @@ function managementCRA(input) {
   let h = '';
   const hArray = [divCRAAnswersState[1][0], divCRAAnswersState[3][0], divCRAAnswersState[3][1], divCRAAnswersState[3][2], divCRAAnswersState[13][0], divCRAAnswersState[13][1]];
   if (hArray.includes(1)) {
+    h = `
+    <p>Dry mouth prevention</p>
+    <ul>
+    `;
+    
     if (divCRAAnswersState[1][0] === 1) {
-      h = `
-      <tr>
-        <td rowspan="2">Dry mouth prevention</td>
-      `;
       if (divCRAAnswersState[3][0] === 1 || divCRAAnswersState[3][1] === 1 || divCRAAnswersState[3][2] === 1 || divCRAAnswersState[13][0] === 1 || divCRAAnswersState[13][1] === 1) {
         h += `
-          <td>Request physician for medication change</td>
-        </tr>
-        <tr>
-          <td>Gurgle and drink water frequently (and after taking medications)</td>
-        </tr>
+          <li>Request physician for medication change</li>
+          <li>Gurgle and drink water frequently (and after taking medications)</li>
+        </ul>
         `;
       } else {
         h += `
-          <td>Request physician for medication change</td>
-        </tr>
-        <tr>
-          <td>Gurgle and drink water after taking medication</td>
-        </tr>
+          <li>Request physician for medication change</li>
+          <li>Gurgle and drink water after taking medication</li>
+        </ul>
         `;
       }
     } else {
-      h = `  
-      <tr>  
-        <td>Dry mouth prevention</td>        
-        <td>Gurgle and drink water frequently</td>
-      </tr>
+      h += `
+        <li>Gurgle and drink water frequently</li>
+      </ul>
       `;
     }
   }
   let z = '';
   if (divCRAAnswersState[5][0] === 1) {
     z = `
-    <tr>
-      <td rowspan="2">Intraoral appliance</td>
-      <td>Clean and soak appliance in water or cleaning solution everyday</td>
-    </tr>
-    <tr>
-      <td>DON'T wear appliance overnight</td>
-    </tr>
+    <p>Intraoral appliance</p>
+    <ul>
+      <li>Clean and soak appliance in water or cleaning solution everyday</li>
+      <li>DON'T wear appliance overnight</li>
+    </ul>
     `;
   }
   let y = '';
   const yArray = [divCRAAnswersState[7][0], divCRAAnswersState[7][1], divCRAAnswersState[7][2], divCRAAnswersState[9][0], divCRAAnswersState[10][0], divCRAAnswersState[10][1]];
   if (yArray.includes(1)) {
+    y = `
+    <p>Diet modification</p>
+    <ul>
+    `;
     const y7 = [divCRAAnswersState[7][0], divCRAAnswersState[7][1], divCRAAnswersState[7][2]];
     const y9 = [divCRAAnswersState[9][0]];
     const y10 = [divCRAAnswersState[10][0], divCRAAnswersState[10][1]];
-    let x = 0;
-    x = y7.includes(1) ? x += 1 : x;
-    x = y9.includes(1) ? x += 1 : x;
-    x = y10.includes(1) ? x += 1 : x;
-    if (x === 1) {
-      y = `            
-      <tr>
-        <td>Diet modification</td>
-      `;
-      y = y7.includes(1) ? y += `
-        <td>Parents do not share anything contaminated with saliva</td>
-      </tr>
+    y = y7.includes(1) ? y += `
+        <li>Parents do not share anything contaminated with saliva</li>
       ` : y;
-      y = y9.includes(1) ? y += `
-        <td>Avoid frequent snacking and keep it during meal-times only</td>
-      </tr>
+    y = y9.includes(1) ? y += `
+        <li>Avoid frequent snacking and keep it during meal-times only</li>
       ` : y;
-      y = y10.includes(1) ? y += `
-        <td>Stop milk bottle or non spill cup use</td>
-      </tr>      
+    y = y10.includes(1) ? y += `
+        <li>Stop milk bottle or non spill cup use</li>
       ` : y;
-    }
-    if (x === 2) {
-      y = `            
-      <tr>
-        <td rowspan="2">Diet modification</td>
-      `;
-      if (y7.includes(1)) {
-        y = y9.includes(1) ? y += `
-          <td>Parents do not share anything contaminated with saliva</td>
-        </tr>
-        <tr>
-          <td>Avoid frequent snacking and keep it during meal-times only</td>
-        </tr>
-        ` : y += `
-          <td>Parents do not share anything contaminated with saliva</td>
-        </tr>
-        <tr>
-          <td>Stop milk bottle or non spill cup use</td>
-        </tr>        
-        `;
-      } else {
-        y += `
-          <td>Avoid frequent snacking and keep it during meal-times only</td>
-        </tr>
-        <tr>
-          <td>Stop milk bottle or non spill cup use</td>
-        </tr>
-        `;
-      }
-    }
-    if (x === 3) {
-      y = `            
-      <tr>
-        <td rowspan="3">Diet modification</td>
-      `;
-      y += `
-        <td>Parents do not share anything contaminated with saliva</td>
-      </tr>
-      <tr>
-        <td>Avoid frequent snacking and keep it during meal-times only</td>
-      </tr>
-      <tr>
-        <td>Stop milk bottle or non spill cup use</td>
-      </tr>
-      `;
-    }
+    y += `<ul>`;
   }
   let w = '';
-  console.log(divCRAAnswersState[11]);
   let s = '';
   let t = '';
   let u = '';
@@ -387,7 +326,6 @@ function managementCRA(input) {
   ${t}
   ${u}
   `;
-  console.log(w);
   let v = '';
   const vArray = [divCRAAnswersState[14][0],divCRAAnswersState[14][2],divCRAAnswersState[14][3],divCRAAnswersState[14][4]];
   if (vArray.includes(1)) {
