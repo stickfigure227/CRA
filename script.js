@@ -356,20 +356,14 @@ function managementCRA(input) {
       </div>
       <div>
         <label>Take home message:</label>
-        <table>
-          <tbody>
-            <tr>
-              <td rowspan="2">Fluoride exposure</td>
-              <td>Drink optimal fluoridated water ${f}</td>
-            </tr>
-            <tr>
-              <td>2x daily brushing with ${g}</td>
-            </tr>
-            ${h}
-            ${z}
-            ${y}
-          </tbody>
-        </table>
+        <p>Fluoride exposure</p>
+        <ul>
+          <li>Drink optimal fluoridated water ${f}</li>
+          <li>2x daily brushing with ${g}</li>
+        </ul>
+        ${h}
+        ${z}
+        ${y}
       </div>
       <button onclick="window.location.reload()"><p>Key in again</p></button>
     </div>
