@@ -193,7 +193,7 @@ const divCRAAnsNextTextRisk = [
 ];
 const specificManagementSuggestion = [
   ['', ''], ['Discuss with physician for medication change (prevent dry mouth)', ''], ['', ''], ['Drink water and gurgle frequently', 'Drink water and gurgle frequently', 'Drink water and gurgle frequently', 0],
-  ['', ''], ["Clean and soak appliance in water or cleaning solution daily AND don't wear overnight", ''], 
+  ['', ''], ["Clean and soak appliance in water or cleaning solution daily AND don't wear dentures overnight", ''], 
   ['', ''], ['Do not share anything contaminated with saliva', 'Do not share anything contaminated with saliva', 'Do not share anything contaminated with saliva', ''], ['Learn about basic dental diseases and how to prevent them', ''], 
   ['Avoid frequent snacking and keep it during meal-times only', ''], ['Stop milk bottle or non spill cup use', 'Stop milk bottle or non spill cup use'], ['Smoking cessation', '', ''],
   [0, 0, 0, 0, 0],
